@@ -1,23 +1,25 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="102" x="-208" y="139">
+  <block type="oled_color" id="357" x="-369" y="-23">
+    <field name="OBJECT">GREEN</field>
     <next>
-      <block type="robot_delay" id="120" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="127">
-            <field name="NUM">5000</field>
-          </block>
-        </value>
+      <block type="led_select" id="318" inline="true">
+        <field name="ACTION">ON</field>
         <next>
-          <block type="movement_reverse" id="137">
+          <block type="robot_delay" id="238" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="245">
+                <field name="NUM">3000</field>
+              </block>
+            </value>
             <next>
-              <block type="robot_delay" id="148" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="155">
-                    <field name="NUM">4000</field>
-                  </block>
-                </value>
+              <block type="movement_forward" id="236">
                 <next>
-                  <block type="movement_stop" id="215"></block>
+                  <block type="oled_linerect" id="372">
+                    <field name="OBJECT">LINE</field>
+                    <next>
+                      <block type="movement_stop" id="383"></block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
