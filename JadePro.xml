@@ -1,54 +1,12 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="led_select" id="1" inline="true" x="49" y="-15">
-    <field name="ACTION">ON</field>
-    <value name="LED">
-      <block type="math_number" id="2">
-        <field name="NUM">4</field>
+  <block type="controls_repeat" id="75" inline="true" x="-31" y="151">
+    <value name="TIMES">
+      <block type="math_number" id="82">
+        <field name="NUM">100</field>
       </block>
     </value>
-    <next>
-      <block type="oled_color" id="3">
-        <field name="OBJECT">GREEN</field>
-        <next>
-          <block type="movement_forward" id="4">
-            <next>
-              <block type="robot_delay" id="5" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="6">
-                    <field name="NUM">2100</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_left" id="7">
-                    <next>
-                      <block type="robot_delay" id="8" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="9">
-                            <field name="NUM">1500</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_stutter" id="10">
-                            <next>
-                              <block type="robot_delay" id="11" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="12">
-                                    <field name="NUM">2000</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
+  </block>
+  <block type="sensor_spectrometer" id="43" x="1" y="186">
+    <field name="LIGHT">BLUE</field>
   </block>
 </xml>
