@@ -12,12 +12,12 @@
           <block type="oled_cleardisplay" id="530">
             <next>
               <block type="oled_drawtext" id="540">
-                <field name="TEXT">blue = </field>
+                <field name="TEXT">red = </field>
                 <next>
                   <block type="oled_drawnumber" id="556" inline="true">
                     <value name="NUMBER">
                       <block type="sensor_spectrometer" id="563">
-                        <field name="LIGHT">BLUE</field>
+                        <field name="LIGHT">RED</field>
                       </block>
                     </value>
                     <next>
