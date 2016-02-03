@@ -11,12 +11,7 @@
         <next>
           <block type="movement_forward" id="236">
             <next>
-              <block type="oled_linerect" id="372">
-                <field name="OBJECT">LINE</field>
-                <next>
-                  <block type="movement_stop" id="383"></block>
-                </next>
-              </block>
+              <block type="movement_stop" id="383"></block>
             </next>
           </block>
         </next>
