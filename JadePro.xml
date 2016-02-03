@@ -1,46 +1,42 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="481" x="-458" y="7">
-    <next>
-      <block type="controls_whileUntil" id="498" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_button" id="630">
-            <field name="OBJECT">UP</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="oled_cleardisplay" id="530">
+  <block type="controls_whileUntil" id="498" inline="false" x="-379" y="102">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="630">
+        <field name="OBJECT">UP</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="oled_cleardisplay" id="530">
+        <next>
+          <block type="oled_drawtext" id="540">
+            <field name="TEXT">green =</field>
             <next>
-              <block type="oled_drawtext" id="540">
-                <field name="TEXT">green =</field>
+              <block type="oled_drawnumber" id="556" inline="true">
+                <value name="NUMBER">
+                  <block type="sensor_spectrometer" id="563">
+                    <field name="LIGHT">GREEN</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="oled_drawnumber" id="556" inline="true">
-                    <value name="NUMBER">
-                      <block type="sensor_spectrometer" id="563">
-                        <field name="LIGHT">GREEN</field>
+                  <block type="oled_setcursor" id="578" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="585">
+                        <field name="NUM">0</field>
                       </block>
                     </value>
-                    <next>
-                      <block type="oled_setcursor" id="578" inline="true">
-                        <value name="STARTX">
-                          <block type="math_number" id="585">
-                            <field name="NUM">0</field>
-                          </block>
-                        </value>
-                        <value name="STARTY">
-                          <block type="math_number" id="602">
-                            <field name="NUM">10</field>
-                          </block>
-                        </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="602">
+                        <field name="NUM">20</field>
                       </block>
-                    </next>
+                    </value>
                   </block>
                 </next>
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
