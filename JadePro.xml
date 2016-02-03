@@ -1,5 +1,14 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="sensor_spectrometer" id="396" x="-308" y="63">
-    <field name="LIGHT">RED</field>
+  <block type="movement_setmotors" id="458" inline="true" x="-434" y="60">
+    <value name="BOTHMOVLEFT">
+      <block type="sensor_spectrometer" id="396">
+        <field name="LIGHT">RED</field>
+      </block>
+    </value>
+    <value name="BOTHMOVRIGHT">
+      <block type="sensor_spectrometer" id="465">
+        <field name="LIGHT">RED</field>
+      </block>
+    </value>
   </block>
 </xml>
