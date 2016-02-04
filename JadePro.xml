@@ -1,32 +1,32 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="59" inline="false" x="-344" y="68">
+  <block type="controls_whileUntil" id="1" inline="false" x="-344" y="68">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
-      <block type="sensor_button" id="66">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">UP</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_cleardisplay" id="76">
+      <block type="oled_cleardisplay" id="3">
         <next>
-          <block type="oled_drawtext" id="98">
+          <block type="oled_drawtext" id="4">
             <field name="TEXT">red =</field>
             <next>
-              <block type="oled_drawnumber" id="108" inline="true">
+              <block type="oled_drawnumber" id="5" inline="true">
                 <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="115">
+                  <block type="sensor_spectrometer" id="6">
                     <field name="LIGHT">RED</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_setcursor" id="142" inline="true">
+                  <block type="oled_setcursor" id="7" inline="true">
                     <value name="STARTX">
-                      <block type="math_number" id="164">
+                      <block type="math_number" id="8">
                         <field name="NUM">0</field>
                       </block>
                     </value>
                     <value name="STARTY">
-                      <block type="math_number" id="171">
+                      <block type="math_number" id="9">
                         <field name="NUM">10</field>
                       </block>
                     </value>
